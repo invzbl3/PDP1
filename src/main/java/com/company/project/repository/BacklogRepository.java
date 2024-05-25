@@ -1,7 +1,7 @@
 package com.company.project.repository;
 
-import com.company.project.model.aggregate.Backlog;
 import java.util.UUID;
+import com.company.project.model.aggregate.Backlog;
 
 public interface BacklogRepository {
     Backlog findById(UUID id);

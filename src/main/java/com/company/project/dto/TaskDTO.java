@@ -8,8 +8,8 @@ import java.util.UUID;
 public class TaskDTO {
     private UUID id;
     private String name;
+    private String volunteer;
     private String description;
     private int hoursRemaining;
-    private String volunteer;
     private List<EstimationLogEntryDTO> estimationLogEntries;
 }

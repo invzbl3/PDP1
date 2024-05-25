@@ -1,10 +1,10 @@
 package com.company.project.service;
 
+import java.util.UUID;
+import org.springframework.stereotype.Service;
 import com.company.project.model.aggregate.Backlog;
 import com.company.project.repository.BacklogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import java.util.UUID;
 
 @Service
 public class BacklogService {

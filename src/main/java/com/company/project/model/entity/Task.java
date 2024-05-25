@@ -1,8 +1,9 @@
 package com.company.project.model.entity;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import java.util.List;
+import lombok.NoArgsConstructor;
+import com.company.project.model.valueobject.EstimationLogEntry;
 
 @Data
 @NoArgsConstructor

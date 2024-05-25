@@ -1,9 +1,10 @@
 package com.company.project.model.aggregate;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.UUID;
+import lombok.NoArgsConstructor;
+import com.company.project.model.entity.BacklogItem;
 
 @Data
 @NoArgsConstructor

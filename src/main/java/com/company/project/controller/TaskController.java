@@ -1,12 +1,12 @@
 package com.company.project.controller;
 
-import com.company.project.model.entity.Task;
-import com.company.project.service.TaskService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
+import com.company.project.model.entity.Task;
+import com.company.project.service.TaskService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping("/tasks")
