@@ -9,7 +9,7 @@ import com.company.project.service.BacklogItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
-@RequestMapping("/backlogItems")
+@RequestMapping("/api/backlogItems")
 public class BacklogItemController {
 
     private final BacklogItemService backlogItemService;

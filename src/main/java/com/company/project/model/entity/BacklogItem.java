@@ -3,7 +3,6 @@ package com.company.project.model.entity;
 import lombok.Data;
 import java.util.List;
 import java.util.UUID;
-
 import lombok.NoArgsConstructor;
 import com.company.project.model.valueobject.SprintID;
 import com.company.project.model.valueobject.ProductID;
