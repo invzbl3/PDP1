@@ -7,13 +7,13 @@ import javax.persistence.Embeddable;
 @Value
 @Embeddable
 public class SprintID {
-    UUID id;
+    UUID sprintId;
 
     public SprintID() {
-        this.id = UUID.randomUUID();
+        this.sprintId = UUID.randomUUID();
     }
 
-    public SprintID(UUID id) {
-        this.id = id;
+    public SprintID(UUID sprintId) {
+        this.sprintId = sprintId;
     }
 }

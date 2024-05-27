@@ -8,13 +8,13 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class ProductID {
 
-    private UUID id;
+    private UUID productId;
 
     public ProductID() {
-        this.id = UUID.randomUUID();
+        this.productId = UUID.randomUUID();
     }
 
-    public ProductID(UUID id) {
-        this.id = id;
+    public ProductID(UUID productId) {
+        this.productId = productId;
     }
 }

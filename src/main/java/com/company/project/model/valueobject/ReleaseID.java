@@ -7,13 +7,13 @@ import javax.persistence.Embeddable;
 @Value
 @Embeddable
 public class ReleaseID {
-    UUID id;
+    UUID releaseId;
 
     public ReleaseID() {
-        this.id = UUID.randomUUID();
+        this.releaseId = UUID.randomUUID();
     }
 
-    public ReleaseID(UUID id) {
-        this.id = id;
+    public ReleaseID(UUID releaseId) {
+        this.releaseId = releaseId;
     }
 }
