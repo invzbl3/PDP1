@@ -25,12 +25,6 @@ public class BacklogItem {
     private String summary;
     private String type;
 
-    /**
-     * 3. @ElementCollection Annotation
-     * <p>
-     * If ProductID, ReleaseID and SprintID are simple values,
-     * you can use the @ElementCollection annotation.
-     */
     @Embedded
     private ProductID productID;
     @Embedded

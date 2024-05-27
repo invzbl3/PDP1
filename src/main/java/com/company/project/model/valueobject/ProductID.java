@@ -7,7 +7,7 @@ import java.util.UUID;
 @Data
 @Embeddable
 public class ProductID {
-    //private final String id;
+
     private UUID id;
 
     public ProductID() {}

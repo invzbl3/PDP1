@@ -21,7 +21,6 @@ public class Task {
     private int hoursRemaining;
     private String volunteer;
 
-    //@ElementCollection
     @OneToMany(mappedBy = "task", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<EstimationLogEntry> estimationLogEntries;
 
