@@ -1,8 +1,18 @@
 package com.company.project.model.valueobject;
 
-import lombok.Value;
+import lombok.Data;
+import javax.persistence.Embeddable;
+import java.util.UUID;
 
-@Value
+@Data
+@Embeddable
 public class ProductID {
-    private final String id;
+    //private final String id;
+    private UUID id;
+
+    public ProductID() {}
+
+    public ProductID(UUID id) {
+        this.id = id;
+    }
 }
