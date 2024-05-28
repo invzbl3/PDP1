@@ -13,3 +13,20 @@ VALUES ('uuid-3', 'Task 1', 'Description for task 1', 10, 'Volunteer 1', 'uuid-2
 -- SELECT id, status, summary FROM backlog_item;
 -- SELECT * FROM task;
 -- SELECT id, name, description FROM task;
+
+-- Joining Tables
+
+-- SELECT bi.id AS backlog_item_id, bi.status, bi.summary, b.id AS backlog_id, b.name AS backlog_name
+-- FROM backlog_item bi
+-- JOIN backlog b ON bi.backlog_id = b.id;
+
+-- SELECT t.id AS task_id, t.name AS task_name, bi.id AS backlog_item_id, bi.status AS backlog_item_status
+-- FROM task t
+-- JOIN backlog_item bi ON t.backlog_item_id = bi.id;
+
+-- SELECT b.id AS backlog_id, b.name AS backlog_name, b.description AS backlog_description,
+--        bi.id AS backlog_item_id, bi.status AS backlog_item_status, bi.summary AS backlog_item_summary,
+--        t.id AS task_id, t.name AS task_name, t.description AS task_description
+-- FROM backlog b
+-- JOIN backlog_item bi ON b.id = bi.backlog_id
+-- JOIN task t ON bi.id = t.backlog_item_id;
