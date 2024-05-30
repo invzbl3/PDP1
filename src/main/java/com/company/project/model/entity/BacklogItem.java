@@ -16,13 +16,19 @@ import com.company.project.model.valueobject.ReleaseID;
 public class BacklogItem {
 
     @Id
+    //@Column(columnDefinition = "VARCHAR(255)")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
+    //@Column
     private String status;
+    //@Column
     private String story;
+    //@Column
     private int storyPoints;
+    //@Column
     private String summary;
+    //@Column
     private String type;
 
     @Embedded
@@ -36,6 +42,7 @@ public class BacklogItem {
     private List<Task> tasks;
 
     @ManyToOne
+    //@JoinColumn(name = "backlog_id", columnDefinition = "VARCHAR(255)")
     private Backlog backlog;
 
     public BacklogItem(UUID id, String status, String story, int storyPoints,

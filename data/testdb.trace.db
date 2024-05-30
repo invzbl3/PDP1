@@ -1,4 +1,4 @@
-2024-05-29 23:58:11 jdbc[3]: exception
+2024-05-30 01:37:42 jdbc[3]: exception
 java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
 	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
 	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
@@ -19,7 +19,7 @@ java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supporte
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-2024-05-29 23:58:19 jdbc[3]: exception
+2024-05-30 01:37:52 jdbc[3]: exception
 java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
 	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
 	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
@@ -40,7 +40,7 @@ java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supporte
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-2024-05-30 01:59:13.252191+02:00 jdbc[3]: exception
+2024-05-30 03:38:07.898536+02:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Values of types "BINARY(255)" and "CHARACTER VARYING(255)" are not comparable; SQL statement:
 alter table backlog_item_tasks add constraint FKigou96u26bqhftbug6ba1akfa foreign key (tasks_id) references task [90110-224]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
@@ -104,7 +104,7 @@ alter table backlog_item_tasks add constraint FKigou96u26bqhftbug6ba1akfa foreig
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
 	at com.company.project.Application.main(Application.java:9)
-2024-05-30 01:59:13.264177+02:00 jdbc[3]: exception
+2024-05-30 03:38:07.910504+02:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Values of types "BINARY(255)" and "CHARACTER VARYING(255)" are not comparable; SQL statement:
 alter table backlog_item_tasks add constraint FK1jlaqd1fh1t60yjn2mu179ra1 foreign key (backlog_item_id) references backlog_item [90110-224]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
@@ -168,7 +168,7 @@ alter table backlog_item_tasks add constraint FK1jlaqd1fh1t60yjn2mu179ra1 foreig
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
 	at com.company.project.Application.main(Application.java:9)
-2024-05-30 01:59:13.269180+02:00 jdbc[3]: exception
+2024-05-30 03:38:07.915543+02:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Values of types "BINARY(255)" and "CHARACTER VARYING(255)" are not comparable; SQL statement:
 alter table estimation_log_entry add constraint FK4qne2wpk2c906qwlb0qt17k7s foreign key (task_id) references task [90110-224]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
