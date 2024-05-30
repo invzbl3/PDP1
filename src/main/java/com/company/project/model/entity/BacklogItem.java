@@ -20,15 +20,15 @@ public class BacklogItem {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    //@Column
+    @Column
     private String status;
-    //@Column
+    @Column
     private String story;
-    //@Column
+    @Column
     private int storyPoints;
-    //@Column
+    @Column
     private String summary;
-    //@Column
+    @Column
     private String type;
 
     @Embedded
@@ -42,7 +42,6 @@ public class BacklogItem {
     private List<Task> tasks;
 
     @ManyToOne
-    //@JoinColumn(name = "backlog_id", columnDefinition = "VARCHAR(255)")
     private Backlog backlog;
 
     public BacklogItem(UUID id, String status, String story, int storyPoints,

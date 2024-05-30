@@ -17,18 +17,18 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    //@Column(nullable = false)
+    @Column(nullable = false)
     private String name;
-    //@Column
+    @Column
     private String description;
-    //@Column
+    @Column
     private int hoursRemaining;
-    //@Column
+    @Column
     private String volunteer;
 
-    //@ManyToOne
-    //@JoinColumn(name = "backlog_item_id", columnDefinition = "VARCHAR(255)")
-    //private BacklogItem backlogItem;
+    @ManyToOne
+    @JoinColumn(name = "backlog_item_id", columnDefinition = "VARCHAR(255)")
+    private BacklogItem backlogItem;
 
     @OneToMany(mappedBy = "task", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<EstimationLogEntry> estimationLogEntries;

@@ -16,9 +16,9 @@ public class Backlog {
     @Column(columnDefinition = "VARCHAR(255)")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-    //@Column(nullable = false)
+    @Column(nullable = false)
     private String name;
-    //@Column
+    @Column
     private String description;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "backlog")
