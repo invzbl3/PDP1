@@ -13,7 +13,7 @@ import com.company.project.model.valueobject.EstimationLogEntry;
 public class Task {
 
     @Id
-    //@Column(columnDefinition = "VARCHAR(255)")
+    @Column(columnDefinition = "VARCHAR(255)")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
