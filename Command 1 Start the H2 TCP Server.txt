@@ -1,0 +1,13 @@
+java -cp h2-2.2.224.jar org.h2.tools.Server -tcp -tcpAllowOthers -tcpPort 9092
+
+Purpose:
+This command starts an H2 database server with specific options.
+
+Components:
+java -cp h2-2.2.224.jar: This runs the Java application with the specified classpath (-cp) pointing to the h2-2.2.224.jar file, which contains the H2 database classes.
+org.h2.tools.Server: This is the main class for starting the H2 server.
+-tcp: This option starts the server in TCP mode, which allows remote clients to connect to the H2 database over TCP/IP.
+-tcpAllowOthers: This option allows connections from other machines. Without this, only localhost connections are allowed.
+-tcpPort 9092: This specifies the TCP port on which the server listens for incoming connections. The default port is 9092.
+Usage:
+This command is typically used to start an H2 database server that can accept connections from remote clients, allowing for multi-client access to the database.

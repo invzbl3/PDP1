@@ -1,0 +1,25 @@
+java -cp h2-2.2.224.jar org.h2.tools.Recover
+
+Purpose:
+This command runs the H2 recovery tool.
+
+Components:
+java -cp h2-2.2.224.jar: Similar to the first command, this runs the Java application with the specified classpath pointing to the h2-2.2.224.jar file.
+org.h2.tools.Recover: This is the main class for the recovery tool provided by H2.
+Usage:
+This command is used to recover data from a corrupted H2 database. The Recover tool reads the database files and attempts to reconstruct the database state as much as possible, generating SQL scripts that can be used to restore the database.
+
+Key Differences:
+Functionality:
+
+Server Command: Starts the H2 database server to allow remote connections.
+Recover Command: Attempts to recover data from a corrupted H2 database.
+Options:
+
+Server Command: Includes options to specify TCP mode, allow remote connections, and set the listening port.
+Recover Command: Does not include these server options as its purpose is data recovery.
+Usage Scenario:
+
+Server Command: Used when you need to run an H2 server instance for database operations.
+Recover Command: Used when you need to recover data from a corrupted database.
+Understanding these differences helps you choose the right command based on whether you need to run a database server or recover a database.

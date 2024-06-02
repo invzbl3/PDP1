@@ -5,8 +5,9 @@ VALUES ('uuid-2', 'Open', 'Story 1', 5, 'Summary for story 1', 'Feature', 'uuid-
         'uuid-1');
 INSERT INTO task (id, name, description, hours_remaining, volunteer, backlog_item_id)
 VALUES ('uuid-3', 'Task 1', 'Description for task 1', 10, 'Volunteer 1', 'uuid-2');
--- for testing purposes you can use the following queries for http://localhost:8081/h2-console/,
+-- For testing purposes you can use the following queries for http://localhost:8081/h2-console/,
 -- as for instance:
+
 -- SELECT * FROM backlog;
 -- SELECT id, name, description FROM backlog;
 -- SELECT * FROM backlog_item;
@@ -30,3 +31,26 @@ VALUES ('uuid-3', 'Task 1', 'Description for task 1', 10, 'Volunteer 1', 'uuid-2
 -- FROM backlog b
 -- JOIN backlog_item bi ON b.id = bi.backlog_id
 -- JOIN task t ON bi.id = t.backlog_item_id;
+
+
+-- Removing all data from existing tables:
+-- Disable foreign key constraints
+-- SET REFERENTIAL_INTEGRITY FALSE;
+
+-- Delete data from each table
+-- DELETE FROM backlog;
+-- DELETE FROM backlog_item;
+-- DELETE FROM task;
+
+-- Re-enable foreign key constraints
+-- SET REFERENTIAL_INTEGRITY TRUE;
+
+-- Explanation:
+-- SET REFERENTIAL_INTEGRITY FALSE: Temporarily disables foreign key constraints, allowing you to delete data without encountering constraint violations.
+-- DELETE FROM <table_name>: Removes all rows from the specified table.
+-- SET REFERENTIAL_INTEGRITY TRUE: Re-enables foreign key constraints after data deletion.
+
+-- Notes:
+-- Ensure that no other processes are accessing the database while performing these operations to avoid potential conflicts.
+-- Always back up your data before performing bulk delete operations, especially in a production environment.
+-- By following these steps and executing the provided queries, you can effectively remove data from all specified tables in your H2 database.
